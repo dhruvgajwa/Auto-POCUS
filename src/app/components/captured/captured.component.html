@@ -1,0 +1,90 @@
+<div class="container text-center " style="min-height: 100vh;background-color: #DFDFDF;">
+    <div class="row no-gutters mt-5" style="height: 400px;">
+        <div class="col-6 " style="height: 400px;">
+            <div class="px-3" style="background-color: lightgray; height: 400px;">
+                <img style="height: 400px;width: 400px;" src="{{getImageSRC()}}"  alt="">
+            </div>
+            
+        </div>
+
+        <div class="col-3" style=" height: 400;">
+           <div class="px-2" style="height: 200px;background-color: darkgray;">
+            <img   style="height: 200px;width: 200px;" src="{{getImageR11SRC()}}"  alt="">
+           </div>
+           <div class="px-2" style="height: 200px;background-color: gray;">
+            <img  *ngIf="id === 'fetalhead'" style="height: 200px;width: 200px;"  src="../../../assets/CSP.PNG"  alt="">
+            </div> 
+        </div>
+        <div class="col-3" style=" height: 400px;">
+           
+                <div  style="height: 200px;background-color: gray;">
+                    <img *ngIf="id === 'fetalhead'" style="height: 200px;width: 200px;" src="../../../assets/falx.PNG"  alt="">
+                </div>
+                <div style="height: 200px;background-color: darkgray;">
+                    <img *ngIf="id === 'fetalhead'" style="height: 200px;width: 200px;" src="../../../assets/head1.PNG"  alt="">
+                </div>
+           
+        </div>
+    </div>
+
+    <div class="row no-gutters" *ngIf="id === 'fetalabdomen'">
+        <div class="col-6">
+            <div class="my-5">
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Abdomen height: 4 inch
+                </h4>
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Abdomen width: 3.2 inch
+                </h4>  
+            </div>
+       
+        </div>
+      
+    </div>
+    
+    <div class="row no-gutters" *ngIf="id === 'fetalhead'">
+        <div class="col-6">
+            <div class="my-5">
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Cerebellum height: 30 mm
+                </h4>
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Cerebellum width: 16 mm
+                </h4>  
+            </div>
+       
+        </div>
+        <div class="col-6">
+            <div class="my-5">
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Length: 30 mm
+                </h4>
+                 
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters" *ngIf="id === 'fetalskull'">
+        <div class="col-6">
+            <div class="my-5">
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Cerebellum height: 30 mm
+                </h4>
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Cerebellum width: 16 mm
+                </h4>  
+            </div>
+       
+        </div>
+        <div class="col-6">
+            <div class="my-5">
+                <h4 style="font-size: 32px;font-weight: bold;">
+                    Length: 30 mm
+                </h4>
+                
+            </div>
+        </div>
+    </div>
+    <div class="p-5" style="background-color: #B73239;">
+        <span style="color: white;font-size: 32px;font-weight: bold"> Estimated fetal age: 32 weeks</span>
+    </div>
+</div>

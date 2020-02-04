@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.0.10:6443
+  name: cluster.local
+contexts:
+- context:
+    cluster: cluster.local
+    namespace: auto-pocus
+    user: admin
+  name: default-context
+current-context: default-context
+kind: Config
+preferences: {}
+users:
+- name: admin
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJhdXRvLXBvY3VzIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tdnZkam0iLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjNkZjA1MGNjLTRjYmEtNDY3MS1hMTY3LTQ1ZTQ3MWRmNDFkMyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDphdXRvLXBvY3VzOmRlZmF1bHQifQ.cI-Q_OAg8hLdcESIdH4Flq5Qoy-wA3axjSbqsUfSB1a7hbCjenLHMwK2f3l6fdRsKm3mBP14kOvlvl9KDBEMxc1ASz9Sw8c7pvy_8oxY6xqYI66WtbhFvupgIGyF3NaSfbCkjRRb1fASRZl55X0h2FYw_VMmweWhtgHIoXEIPBHec57XzR3JUSVoB3cUXCamJs4vEZzE1NxEdjREwgplFFa0v2tesufpBkCQi9DGfJ9Qwm1JuV9-xM0YbtNtim4BTZtaPdyLUEl1Kv-8q_cm9tRC_r1an7wzYa7LYuYWefImDme695oT0PXzwUfqy4mZO8oz1imc78X0o4V5ISCKlA
